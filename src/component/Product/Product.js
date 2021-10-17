@@ -1,0 +1,24 @@
+import React from 'react';
+import './product.css'
+
+const Product = (props) => {
+    const { name, img, type } = props.product;
+    return (
+        <div>
+            <div className="col card rounded">
+                <div className="card h-100">
+                    <img src={img} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">{name}</h5>
+                        <p className="card-text">{type}</p>
+                        <div>                        <button className="me-3 rounded-pill btn btn-info">For more</button>
+                            <button className="me-3 rounded-pill btn btn-warning">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Product;
