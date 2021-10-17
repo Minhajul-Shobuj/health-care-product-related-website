@@ -7,7 +7,7 @@ const Products = () => {
         fetch('fakeData.json')
             .then(res => res.json())
             .then(data => setProduct(data));
-    }, [])
+    }, []);
     return (
         <div>
             <h1>Product:{products.length}</h1>

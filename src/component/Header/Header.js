@@ -6,7 +6,7 @@ import logo from '../../image/logo.png'
 const Header = () => {
     return (
         <div>
-            <Navbar bg="primary" variant="dark">
+            <Navbar className="fixed-top" bg="primary" variant="dark">
                 <Container>
                     <img style={{ width: '200px', height: '30px' }} src={logo} alt="" />
                     <Nav className="mx-auto">

@@ -5,7 +5,7 @@ const Product = (props) => {
     const { name, img, type } = props.product;
     return (
         <div>
-            <div className="col card rounded">
+            <div className="col cards rounded">
                 <div className="card h-100">
                     <img src={img} className="card-img-top" alt="..." />
                     <div className="card-body">
