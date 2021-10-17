@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Ace 500",
+        "img": "https://i.ibb.co/zJL2Th3/breakfast1.png",
+        "type": "tablet"
+    },
+    {
+        "id": 2,
+        "name": "Adryl",
+        "img": "https://i.ibb.co/zZSPNRL/ADRYL-100ml.jpg",
+        "type": "syrup"
+    },
+    {
+        "id": 3,
+        "name": "Afun",
+        "img": "https://i.ibb.co/SrjqwMR/AFUN-Cream-1.jpg",
+        "type": "cream"
+    },
+    {
+        "id": 4,
+        "name": "Ansulin",
+        "img": "https://i.ibb.co/whHXBry/ansulin.jpg",
+        "type": "Human Insulin"
+    },
+    {
+        "id": 5,
+        "name": "Beviplex-b",
+        "img": "https://i.ibb.co/XjDghSV/beviplex-b-30-tableta-srbotrade-1.jpg",
+        "type": "tablet"
+    },
+    {
+        "id": 6,
+        "name": "BROFEX-100-ML",
+        "img": "https://i.ibb.co/NnBDVds/BROFEX-100-ML.jpg",
+        "type": "syrup"
+    },
+    {
+        "id": 7,
+        "name": "Calb-D-V",
+        "img": "https://i.ibb.co/FmffYxz/calb-D-v-l-e1594794381463.jpg",
+        "type": "tablet"
+    },
+    {
+        "id": 8,
+        "name": "Calbo-D",
+        "img": "https://i.ibb.co/1sJ3Ycn/Calbo-D-400x400.jpg",
+        "type": "tablet"
+    },
+    {
+        "id": 9,
+        "name": "DERMASOL",
+        "img": "https://i.ibb.co/rwpQmJx/DERMASOL-CREAM-20-GM-400x400.jpg",
+        "type": "cream"
+    },
+    {
+        "id": 10,
+        "name": "Duolax",
+        "img": "https://i.ibb.co/BtBsK5h/duolax.jpg",
+        "type": "syrup"
+    }
+]
