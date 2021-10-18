@@ -1,24 +1,24 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
-import logo from '../../image/logo.png'
+import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import logo from '../../image/preview.jpg'
 
 const Header = () => {
     return (
-        <div>
-            <Navbar className="fixed-top" bg="primary" variant="dark">
+        <>
+            <Navbar bg="dark" variant="dark">
                 <Container>
-                    <img style={{ width: '200px', height: '30px' }} src={logo} alt="" />
-                    <Nav className="mx-auto">
-                        <NavLink className="ms-3 text-white" to="/home">Home</NavLink>
-                        <NavLink className="ms-3 text-white" to="/products">Products</NavLink>
-                        <NavLink className="ms-3 text-white" to="/about">About</NavLink>
-                        <NavLink className="ms-3 text-white" to="/login">Login</NavLink>
-                        <NavLink className="ms-3 text-white" to="/register">Register</NavLink>
+                    <img style={{ width: '300px', height: '30px' }} src={logo} alt="" />
+                    <Nav className="ms-auto">
+                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/products">Products</Nav.Link>
+                        <Nav.Link as={Link} to="/about">About</Nav.Link>
+                        <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                        <Nav.Link as={Link} to="/register">Register</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
-        </div>
+        </>
     );
 };
 

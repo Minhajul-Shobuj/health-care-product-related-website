@@ -5,6 +5,7 @@ import useProducts from '../../hooks/allProducts';
 
 const Home = () => {
     const [products] = useProducts();
+    console.log(products)
     const product = products.slice(4);
     return (
         <div className="my-5">
@@ -29,7 +30,7 @@ const Home = () => {
             </div>
             <div className="container row row-cols-1 row-cols-md-3 g-4 fw-bold">
                 {
-                    product.map(element => <div className="col cards rounded">
+                    product.map(element => <div key={element.id} className="col cards rounded">
                         <div className="card h-100">
                             <img src={element.img} className="card-img-top" alt="..." />
                             <div className="card-body">
