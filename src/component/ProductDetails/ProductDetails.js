@@ -9,6 +9,9 @@ const ProductDetails = () => {
             .then(res => res.json())
             .then(data => setProducts(data));
     }, []);
+    useEffect(() => {
+        const product = products.find(product => console.log(product.id === productId))
+    }, [])
     return (
         <div>
             <h1>{productId}</h1>
