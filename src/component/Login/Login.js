@@ -19,7 +19,7 @@ const Login = () => {
                 </form>
             </div>
             <br />
-            <button onClick={googleLogIn}>login</button>
+            <button className="btn btn-warning rounded-pill" onClick={googleLogIn}>Login with google</button>
             <div className="d-flex align-items-center justify-content-center">
                 <p className="mt-3">Don't have an account??</p><Link to="/register">Register</Link>
             </div>

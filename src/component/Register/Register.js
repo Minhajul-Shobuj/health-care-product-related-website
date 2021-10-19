@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-    const { error, takeEmail, takePassword, takeName, handleRegistration } = useAuth();
+    const { error, takeEmail, takePassword, takeName, handleRegistration, googleLogIn } = useAuth();
     return (
         <div>
             <h1>Please Register</h1>
@@ -29,6 +29,7 @@ const Register = () => {
                     </Button>
                 </Form>
             </div>
+            <div className="mt-3"> <button className="btn btn-warning rounded-pill" onClick={googleLogIn}>Register with google</button></div>
             <div className="text-danger mt-2 text-center d-flex align-items-center justify-content-center"><h5>{error}</h5>
             </div>
             <div className="d-flex align-items-center justify-content-center">

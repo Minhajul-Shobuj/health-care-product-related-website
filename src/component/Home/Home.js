@@ -5,7 +5,6 @@ import useProducts from '../../hooks/allProducts';
 
 const Home = () => {
     const [products] = useProducts();
-    console.log(products)
     const product = products.slice(4);
     return (
         <div className="mt-5 ">
