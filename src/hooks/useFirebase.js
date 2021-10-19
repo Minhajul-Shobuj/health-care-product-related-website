@@ -44,11 +44,11 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
                 setUser(result.user);
+                console.log(result.user)
                 setError('');
             })
             .catch((error) => {
                 setError('email-already-in-use');
-                console.log(error)
             });
     };
 
@@ -87,7 +87,7 @@ const useFirebase = () => {
         return unsubsCribed;
     }, [])
     return {
-        googleLogIn, logOut, user, error, takeName, takeEmail, takePassword, handleRegistration, resetPassword
+        googleLogIn, logOut, user, name, error, takeName, takeEmail, takePassword, handleRegistration, resetPassword
     }
 };
 

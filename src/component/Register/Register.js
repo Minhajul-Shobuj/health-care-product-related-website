@@ -10,9 +10,9 @@ const Register = () => {
             <h1>Please Register</h1>
             <div className="mt-5 d-flex align-items-center justify-content-center">
                 <Form onSubmit={handleRegistration}>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Group className="mb-3" controlId="formName">
                         <Form.Label>Name</Form.Label>
-                        <Form.Control onBlur={takeName} type="email" placeholder="Enter your name" />
+                        <Form.Control onBlur={takeName} type="text" placeholder="Enter your name" />
                         <Form.Label>Email address</Form.Label>
                         <Form.Control onBlur={takeEmail} type="email" placeholder="Enter email" />
                         <Form.Text className="text-muted">

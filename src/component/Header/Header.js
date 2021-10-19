@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import logo from '../../image/preview.jpg'
 
 const Header = () => {
-    const { user, logOut } = useAuth();
+    const { user, logOut, name } = useAuth();
     return (
         <>
             <Navbar bg="dark" variant="dark">
