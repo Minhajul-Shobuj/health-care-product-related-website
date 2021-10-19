@@ -8,7 +8,7 @@ const Header = () => {
     const { user, logOut } = useAuth();
     return (
         <>
-            <Navbar className="navbar navbar-expand-lg" bg="dark" variant="dark">
+            <Navbar sticky="top" className="navbar navbar-expand-lg" bg="dark" variant="dark">
                 <Container>
                     <img style={{ width: '300px', height: '30px' }} src={logo} alt="" />
                     <Nav className="ms-auto">

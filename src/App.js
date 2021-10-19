@@ -10,6 +10,7 @@ import Header from '../src/component/Header/Header'
 import About from '../src/component/About/About'
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
+import Footer from './component/footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -42,6 +43,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
         </BrowserRouter>
       </AuthProvider>
     </div>
