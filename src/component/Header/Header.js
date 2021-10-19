@@ -5,10 +5,10 @@ import useAuth from '../../hooks/useAuth';
 import logo from '../../image/preview.jpg'
 
 const Header = () => {
-    const { user, logOut, name } = useAuth();
+    const { user, logOut } = useAuth();
     return (
         <>
-            <Navbar bg="dark" variant="dark">
+            <Navbar className="navbar navbar-expand-lg" bg="dark" variant="dark">
                 <Container>
                     <img style={{ width: '300px', height: '30px' }} src={logo} alt="" />
                     <Nav className="ms-auto">
