@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import logo from '../../image/preview.jpg'
 
 const Header = () => {
     const { user, logOut } = useAuth();
@@ -10,7 +9,7 @@ const Header = () => {
         <>
             <Navbar sticky="top" className="navbar navbar-expand-lg" bg="dark" variant="dark">
                 <Container>
-                    <img style={{ width: '300px', height: '30px' }} src={logo} alt="" />
+                    <h1 className="text-success fw-bolder">Drug_Hou$e</h1>
                     <Nav className="ms-auto">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/products">Products</Nav.Link>
