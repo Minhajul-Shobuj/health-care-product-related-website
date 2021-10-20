@@ -10,7 +10,7 @@ const Products = () => {
     }, []);
     return (
         <div>
-            <div className="container row row-cols-1 row-cols-md-3 g-4 fw-bold">
+            <div className="container row row-cols-1 row-cols-md-3 g-4 fw-bold mt-5">
                 {
                     products.map(product => <Product product={product} key={product.id}></Product>)
                 }

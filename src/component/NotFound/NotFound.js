@@ -6,7 +6,7 @@ const NotFound = () => {
     return (
         <div>
             <h1>The page you are looking for is not Found;</h1>
-            <img style={{ width: '500px' }} src={image} alt="" />
+            <div > <img className="img-fluid" style={{ width: '500px' }} src={image} alt="" /></div>
             <br />
             <Link to="/home"><button className="btn btn-danger">Back to home</button></Link>
         </div>
