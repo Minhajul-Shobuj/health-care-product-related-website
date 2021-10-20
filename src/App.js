@@ -11,6 +11,7 @@ import About from '../src/component/About/About'
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './component/PrivateRoute/PrivateRoute';
 import Footer from './component/footer/Footer';
+import Freeservice from './component/FreeService/Freeservice';
 function App() {
   return (
     <div className="App">
@@ -36,9 +37,12 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="/about">
+            <PrivateRoute path="/about">
               <About></About>
-            </Route>
+            </PrivateRoute>
+            <PrivateRoute path="/support">
+              <Freeservice></Freeservice>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

@@ -8,7 +8,7 @@ const Home = () => {
     const product = products.slice(4);
     return (
         <div className="mt-5 ">
-            <div className="container fw-bolder bg-secondary rounded mx-5 d-flex justify-content-center text-warning">
+            <div className="container fw-bolder bg-secondary rounded d-flex justify-content-center text-warning">
                 <div>
                     <h1>Drug-Store</h1>
                     <p>The most trustable Site for all kinds of medicine all over the world</p>
