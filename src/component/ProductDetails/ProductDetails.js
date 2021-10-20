@@ -16,6 +16,7 @@ const ProductDetails = () => {
     }, [products])
     return (
         <div className="container mt-5">
+            <img style={{ width: '500px' }} src={product?.img} alt="" />
             <h1 className="text-secondary">{product?.name} (<small>{product?.type})</small></h1>
             <h5><span className="text-warning">Indication:</span> {product?.Indication}</h5>
             <p><span className="text-warning">Dosage:</span> {product?.Dosage}</p>
