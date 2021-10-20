@@ -13,6 +13,8 @@ const Register = () => {
                     <Form.Group className="mb-3" controlId="formName">
                         <Form.Label>Name</Form.Label>
                         <Form.Control onBlur={takeName} type="text" placeholder="Enter your name" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
                         <Form.Control onBlur={takeEmail} type="email" placeholder="Enter email" />
                         <Form.Text className="text-muted">

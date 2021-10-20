@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, sendPasswordResetEmail, updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
 import authentication from "../Firebase/firebase.initialize";
 
@@ -18,6 +18,7 @@ const useFirebase = () => {
     const googleLogIn = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
+                setError('');
                 setUser(result.user);
             }).catch((error) => {
                 setError(error.message);
@@ -43,14 +44,25 @@ const useFirebase = () => {
         };
         createUserWithEmailAndPassword(auth, email, password)
             .then((result) => {
-                setUser(result.user);
-                console.log(result.user)
                 setError('');
+                setUser(result.user);
+                setName();
+                updateName();
+                console.log(result.user)
             })
             .catch((error) => {
-                setError('email-already-in-use');
+                setError(error.message);
             });
     };
+    const updateName = () => {
+        updateProfile(auth.currentUser, {
+            displayName: name
+        }).then((result) => {
+            setUser(result.user);
+        }).catch((error) => {
+            setError(error.message)
+        });
+    }
 
     const resetPassword = () => {
         const auth = getAuth()
